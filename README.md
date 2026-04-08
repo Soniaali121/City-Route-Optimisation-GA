@@ -5,9 +5,8 @@
 This project addresses The **Traveling Salesman problem(TSP)** using two distinct AI paradigms: a 1.**Single_solution_driven Search**:Stochastic HIll Climbing
 2. **Population_Driven Evolutionary Algorithm**:Genetic Algorithm. 
 
-The objective is to find the shortest possible route that visits 50 cities exactly once and returns to the starting point.
-The implementation is written in python ( jupyter Notebook) and adheres to PEP8 style guidlines.
----
+The objective is to find the shortest possible route that visits 50 cities exactly once and returns to the starting point.The implementation is written in python ( jupyter Notebook) and adheres to PEP8 style guidlines.
+
 
 ##Author Information
 
