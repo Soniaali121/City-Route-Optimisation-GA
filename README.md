@@ -1,100 +1,60 @@
-# City-Route-Optimisation-GA
-AI project demonstrating Genetic Algorithm and A* search for cities route optimisation
-
-Conceptual Design and Genetic Algorithm  Approach to City Route optimisation 
-Author Name 
-Mst Sonia Khatun 
-ID 
-Student Id:24051725 
-
-#Abstract 
-This Assignment demonstrates the application of Ai search and Optimization techniques on a 
-provided cities dataset. A simple Genetic Algorithm was used to explore possible routes 
-between cities, with the objective of minimising total travel distance. The study focuses on 
-algorithm design, basic implementation, and conceptual understanding of optimisation 
-principles,including the balance between exploration and exploitation. 
-1.Introduction 
-AI search and optimisation algorithms are important tools for solving problems like route 
-planning, scheduling and resource allocation. The aim of this assignment is to demonstrate a 
-basic understanding of these algorithms using a cities dataset, focusing on a simple genetic 
-Algorithm approach. Due to time constraints and other circumstances, full implementation is  
-simple and conceptual. 
-
-2. Problem Definition 
-   1.State Space: Each city in the dataset is a state. 
-   2.Goal: find a route visiting all cities with minimal total distance. 
-   3.Constraints: Each city must be visited once, the route start at one city and ends at 
-    another(Like loops). 
-   4. Dataset: Cities provided with X, Y coordinates. 
-3. Literature Review / Related Work 
-   1.Classical search algorithms such as A or Dijkstra are often used for shortest problems. 
-   2. Genetics algorithms are population based optimization methods suitable for route planning 
-   and combinatorial problems like the Travelling Salesman Problem. 
-   3. GA benefits: robustness, exploration of multiple solutions. 
-   4. GA limitation:  results vary based on parameter tuning, may not guarantee the optimal 
-   solution. 
-4.Methodology 
-  1. Chromosome: Ordered list of cities(route) 
-  2. Fitness Function: Inverse of total distance(shorter = better) 
-  3. Selection: Top solutions are preferred 
-  4. Mutation: Swap two cities to maintain diversity. 
-  5. Generations: repeat mutation And selection to evolve better solutions. 
+City Route Optimisation using AI Search and Evolutionary Algorithms
  
-It is a simple GA demonstrates MO2 concepts: optimisation, parameter tuning and exploration 
-vs exploitation 
- 
- 
-4.1 Single - State Search Algorithm ( A*) 
-    A* search is a classical single- state search algorithm used to find an optimal path 
-between a start state and a goal state. It evaluates nodes by combining the actual cost 
-of the start note, g(n). And a heuristic estimate to the goal, h(n). In this assessment, A* 
-is included to demonstrate a traditional AI search approach and to provide a conceptual 
-comparison with evolutionary algorithms. The  heuristic function used is the Euclidean 
-distance between cities, which is suitable for spatial optimization problems. 
- 
-Pseudocode: 
- Initialize open list with start node 
- While open list is not empty 
-           Select node with lowest f(n) = g(n) + h(n) 
-           If node is goal: return solution 
-           Expand nodes and update costs. 
- 
-4.2 Evolutionary Algorithm(Genetic Algorithm) 
-        A Genetic Algorithm (GA) was applied to solve the city optimization problem, which is 
-similar to the Travelling salesman problem. Each chromosome  represents a possible route 
-visiting all cities exactly once. The fitness function is defined as the total euclidean distance of 
-the route, where shorter distance corresponded to better fitness. The algorithm evolves 
-solutions over multiple generations using selection, crossover, and  mutation operators. This 
-approach allows effective exploration of a large search space and balance exploration and 
-exploitation through parameter tuning. 
+Project Overview
+This project addresses The Traveling Salesman problem(TSP) using two distinct AI paradigms: a Single_solution_driven Search( HIll Climbing) and a Population_Driven Evolutionary Algorithm( Genetic Algorithm). The objective is to find the shortest possible route that visits 50 cities exactly once and returns to the starting point.
+
+The implementation is written in python ( jupyter Notebook) and adheres to PEP8 style guidlines.
+
+Author Information
+
+Name: Mst Sonia Khatun
+Student ID: 24051725
+Module: Ai For Search and Optimisation(UFCEL1-15_M)
+University: University of the West of England
+
+Key Features
+
+Stage 1 Implementation: Stochastic Hill Climbing Algorithm for iterative route improvement.
+Stage 2 Implementation: genetic Algorithm utilizing tournament selection, ordered crossover,and swap mutation.
+Scalability Analysis: Systematic benchmarking across problem sizes of 10, 20,30, and 50 cities.
+Performance Visualization: Real-Time Plotting of convergence history and final optimized route map.
+Result Export: Automatic recording of the best city sequence to external text file.
+
+Installation And Setup
+
+Download git and open command prompt
+
+Clone the Repository:  git clone [ Your-GitHub-Link-here]
+
+Environment Requirements: Ensure you have a python environment ( Anaconda/jupyter) with the following libraries installed;
+ Panda
+ numpy
+ Matplotlib
+      
+Data Placement:
+Ensure The cities.csv file is located in the same directory as the jupyter Notebook.
+
+Usage   
+Launch jupyter Notebook or JupyterLab.
+Open  AI_For_Search_and_Optimisation.ipynb
+Run all cells to execute the scalability test and generate performance metrics.
+View the best_route_sequence.txt file generated in the project folder for the final 50 city output.
 
 
-5. Implementation Details 
- 
-    ###Code 
+Methodology Summary
 
-6.Result and Analysis 
-  1. Expected behaviour: Shorter routes improve over generations. 
-  2. Best route found : printed by by code 
-  3. Observation: Small population size and few generations make it quick but approximate.        
-  Mutation prevents early convergence. 
+Hill Climbing: Operates with a single candidate solution, adjusting it iteratively to improve fitness based on total distance.
+Genetic Algorithm: uses a population of chromosomes(route) to evolve better solutions Over  generations, balancing exploration and exploitation.
+Heuristics; Euclidean distance is utilized as the primary metric for cose calculation between coordinates.
+ Repository Structure
+AI_For_Search_and_Optimisation.ipynb: Main implementation notebook following PEP8 standards.
+Cities.csv: Dataset containing city coordinates.
+best_route_sequence.txt: External record of the optimal route found.
+Performance_comparison.png: generated convergence graph
+README.md: project documentation.
 
-7. Comparison and Discussion 
-   1. GA vs single state search 
-       a. GA: stochastic, explores many solutions, scalable to larger problems 
-       b. Single state search A and Dijkstra : deterministic, optimal, but less flexible for  
-       large datasets 
-   2. Limitation: GA may not find an absolute short path, performance depends on population  
-   size and mutation rate.  
+References
+Alanzi, E., & Menai, M. E. B. (2025). Solving the traveling salesman problem with machine learning.
+Mamatova, Z., & Abdumajidova, M. (2025). Mathematical modeling and optimal solutions.
+Russell, S. and Norvig, P. Artificial Intelligence: A Modern Approach.
 
-8. Conclusion And future work 
-   1. Conceptual GA successfully demonstrate optimisation principles 
-   2. Future work could include: 
-       a. Implementing a full A* search on the cities dataset. 
-       b. Increasing population size and generations for better solutions 
-       c. Comparing GA with other evolutionary techniques 
-
-9. References 
-     1. Russell, S. And Norvig, P . Artificial intelligence: A Modern Approach 
-     2. Goldberger, D.E., Genetic Algorithms in Search, Optimization, and machine learning 
-     3. Module lecture notes
