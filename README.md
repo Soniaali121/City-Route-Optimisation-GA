@@ -35,38 +35,44 @@ The implementation is written in **Python (Jupyter Notebook)** and adheres to **
    git clone [Your-GitHub-Link-Here]
 
 
-#Environment Requirements: Ensure you have a python environment ( Anaconda/jupyter) with the following libraries installed;
- Panda
- numpy
- Matplotlib
-      
-##Data Placement:
-Ensure The cities.csv file is located in the same directory as the jupyter Notebook.
+## Environment Requirements
+Ensure you have a Python environment (Anaconda/Jupyter) with the following libraries installed:  
+- pandas  
+- numpy  
+- matplotlib  
 
+---
 
+## Data Placement
+Ensure the `Cities.csv` file is located in the same directory as the Jupyter Notebook.
 
-##Usage   
-1. Launch jupyter Notebook or JupyterLab.
-2. Open  AI_For_Search_and_Optimisation.ipynb
-3. Run all cells to execute the scalability test and generate performance metrics.
-4. View the best_route_sequence.txt file generated in the project folder for the final 50 city output.
+---
 
+## Usage
+1. Launch **Jupyter Notebook** or **JupyterLab**.  
+2. Open `AI_For_Search_and_Optimisation.ipynb`.  
+3. Run all cells to execute the scalability test and generate performance metrics.  
+4. View the `best_route_sequence.txt` file generated in the project folder for the final 50-city output.
 
-##Methodology Summary
+---
 
-1. **Hill Climbing**: Operates with a single candidate solution, adjusting it iteratively to improve fitness based on total distance.
-2.**Genetic Algorithm**: uses a population of chromosomes(route) to evolve better solutions Over  generations, balancing exploration and exploitation.
-3.**Heuristics**: Euclidean distance is utilized as the primary metric for cose calculation between coordinates.
- Repository Structure
-4.**AI_For_Search_and_Optimisation.ipynb**: Main implementation notebook following PEP8 standards.
-5.**Cities.csv**: Dataset containing city coordinates.
-6.**best_route_sequence.txt**: External record of the optimal route found.
-7.**Performance_comparison.png**: generated convergence graph
-8.**README.md**: project documentation.
+## Methodology Summary
+1. **Hill Climbing:** Operates with a single candidate solution, adjusting it iteratively to improve fitness based on total distance.  
+2. **Genetic Algorithm:** Uses a population of chromosomes (routes) to evolve better solutions over generations, balancing exploration and exploitation.  
+3. **Heuristics:** Euclidean distance is utilized as the primary metric for cost calculation between coordinates.
 
+---
 
+## Repository Structure
+- `AI_For_Search_and_Optimisation.ipynb` – Main implementation notebook following PEP8 standards  
+- `Cities.csv` – Dataset containing city coordinates  
+- `best_route_sequence.txt` – External record of the optimal route found  
+- `Performance_comparison.png` – Generated convergence graph  
+- `README.md` – Project documentation  
 
-References
-Alanzi, E., & Menai, M. E. B. (2025). Solving the traveling salesman problem with machine learning.
-Mamatova, Z., & Abdumajidova, M. (2025). Mathematical modeling and optimal solutions.
-Russell, S. and Norvig, P. Artificial Intelligence: A Modern Approach.
+---
+
+## References
+- Alanzi, E., & Menai, M. E. B. (2025). *Solving the traveling salesman problem with machine learning.*  
+- Mamatova, Z., & Abdumajidova, M. (2025). *Mathematical modeling and optimal solutions.*  
+- Russell, S., & Norvig, P. *Artificial Intelligence: A Modern Approach.*
