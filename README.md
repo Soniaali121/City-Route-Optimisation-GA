@@ -1,40 +1,38 @@
-#City Route Optimisation using AI Search and Evolutionary Algorithms
- 
+# City Route Optimisation using AI Search and Evolutionary Algorithms
 
-##Project Overview
-This project addresses The **Traveling Salesman problem(TSP)** using two distinct AI paradigms: a 1.**Single_solution_driven Search**:Stochastic HIll Climbing
-2. **Population_Driven Evolutionary Algorithm**:Genetic Algorithm. 
+## Project Overview
+This project addresses the **Traveling Salesman Problem (TSP)** using two distinct AI paradigms:  
 
-The objective is to find the shortest possible route that visits 50 cities exactly once and returns to the starting point.The implementation is written in python ( jupyter Notebook) and adheres to PEP8 style guidlines.
+1. **Single-solution-driven Search**: Stochastic Hill Climbing  
+2. **Population-driven Evolutionary Algorithm**: Genetic Algorithm  
 
+The objective is to find the shortest possible route that visits **50 cities exactly once** and returns to the starting point.
 
-##Author Information
+The implementation is written in **Python (Jupyter Notebook)** and adheres to **PEP8 style guidelines**.
 
--**Name**: Mst Sonia Khatun
--**Student ID**: 24051725
--**Module**: Ai For Search and Optimisation(UFCEL1-15_M)
--**University**: University of the West of England
+---
 
+## Author Information
+- **Name:** Mst Sonia Khatun  
+- **Student ID:** 24051725  
+- **Module:** AI For Search and Optimisation (UFCEL1-15_M)  
+- **University:** University of the West of England  
 
+---
 
+## Key Features
+- **Stage 1 Implementation:** Stochastic Hill Climbing for iterative route improvement.  
+- **Stage 2 Implementation:** Genetic Algorithm using tournament selection, ordered crossover, and swap mutation.  
+- **Scalability Analysis:** Benchmarking across problem sizes of 10, 20, 30, and 50 cities.  
+- **Performance Visualization:** Real-time plotting of convergence history and final optimized route map.  
+- **Result Export:** Automatic recording of the best city sequence to an external text file.
 
-##Key Features
+---
 
--**Stage 1 Implementation**: Stochastic Hill Climbing Algorithm for iterative route improvement.
-
--**Stage 2 Implementation**: genetic Algorithm utilizing tournament selection, ordered crossover,and swap mutation.
-
--**Scalability Analysis**: Systematic benchmarking across problem sizes of 10, 20,30, and 50 cities.
-
--**Performance Visualization**: Real-Time Plotting of convergence history and final optimized route map.
-
--**Result Export**: Automatic recording of the best city sequence to external text file.
-----
-
-##Installation And Setup
-1. **Clone the Repository**:
+## Installation and Setup
+1. **Clone the Repository**:  
    ```bash
-   git clone [ Your-GitHub-Link-here]
+   git clone [Your-GitHub-Link-Here]
 
 
 #Environment Requirements: Ensure you have a python environment ( Anaconda/jupyter) with the following libraries installed;
