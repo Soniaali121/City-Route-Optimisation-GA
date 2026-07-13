@@ -34,6 +34,7 @@ Ensure you have a Python environment setup (such as an Anaconda distribution or 
 ```bash
 pip install pandas numpy matplotlib scipy
 
+---
 ## 📁 Data Placement
 Ensure the `Cities.csv` file is located in the same directory as the Jupyter Notebook.
 
