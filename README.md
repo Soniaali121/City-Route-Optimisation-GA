@@ -34,4 +34,38 @@ Ensure you have a Python environment setup (such as an Anaconda distribution or 
 ```bash
 pip install pandas numpy matplotlib scipy
 ```
+
+## 📁 Data Placement
+Ensure the `Cities.csv` file is located in the same directory as the Jupyter Notebook.
+
+---
+
+## 💻 Usage
+1. Launch **Jupyter Notebook** or **JupyterLab**.  
+2. Open `AI_For_Search_and_Optimisation.ipynb`.  
+3. Run all cells to execute the scalability test and generate performance metrics.  
+4. View the `best_route_sequence.txt` file generated in the project folder for the final 50-city output.
+
+---
+
+## 🧠 Methodology Summary
+* **Hill Climbing:** Operates with a single candidate solution, adjusting it iteratively to improve fitness based on total distance.  
+* **Genetic Algorithm:** Uses a population of chromosomes (routes) to evolve better solutions over generations, balancing exploration and exploitation.  
+* **Heuristics:** Euclidean distance is utilized as the primary metric for cost calculation between coordinates.
+
+---
+
+## 📂 Repository Structure
+* `AI_For_Search_and_Optimisation.ipynb` – Main implementation notebook following PEP8 standards  
+* `Cities.csv` – Dataset containing city coordinates  
+* `best_route_sequence.txt` – External record of the optimal route found  
+* `Performance_comparison.png` – Generated convergence graph  
+* `README.md` – Project documentation  
+
+---
+
+## 📚 References
+* Alanzi, E., & Menai, M. E. B. (2025). Solving the traveling salesman problem with machine learning.  
+* Mamatova, Z., & Abdumajidova, M. (2025). Mathematical modeling and optimal solutions.  
+* Russell, S., & Norvig, P. *Artificial Intelligence: A Modern Approach.*
 ---
