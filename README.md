@@ -33,5 +33,5 @@ The primary objective is to find the shortest possible Euclidean route that visi
 Ensure you have a Python environment setup (such as an Anaconda distribution or virtual environment) with the following foundational data science libraries installed:
 ```bash
 pip install pandas numpy matplotlib scipy
-
+```
 ---
